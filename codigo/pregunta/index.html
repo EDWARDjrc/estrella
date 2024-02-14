@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración de Amor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-color: #fce4ec;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #carta {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #e91e63;
+        }
+
+        #mensaje {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #firma {
+            font-style: italic;
+            color: #888;
+        }
+
+        #firma::before {
+            content: '❤️ ';
+        }
+
+        .boton-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boton {
+            background-color: #e91e63;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: 10px;
+            border: 2px solid #e91e63;
+        }
+
+        .boton:hover {
+            background-color: #c2185b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="carta">
+        <h1>Querida Estrella</h1>
+        <p id="mensaje">
+            Desde que entraste en mi vida, todo ha cambiado. Tu luz ilumina mis días y tus risas son la melodía más
+            hermosa que he escuchado. No puedo contener más estos sentimientos y necesito decirte que me has robado el
+            corazón.
+            ¿Te gustaría estar conmigo? Me encantaría compartir cada momento contigo y construir juntos un futuro lleno
+            de amor y felicidad.
+        </p>
+        <div class="boton-container">
+            <button class="boton" onclick="siAcepto()">¡Sí, acepto!</button>
+            <button class="boton" onclick="noAcepto()">No, gracias</button>
+        </div>
+        <p id="firma">Con cariño, Edward</p>
+    </div>
+
+    <script>
+        function siAcepto() {
+            window.location.href = '../flores/index.html';
+        }
+
+        function noAcepto() {
+            window.location.href = 'https://www.youtube.com/watch?v=7kvyb0_R9KM';
+        }
+    </script>
+
+</body>
+
+</html>
